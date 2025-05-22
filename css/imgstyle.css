@@ -5,19 +5,25 @@
     height: 200px;
   }
 }
+/* 배경이미지 */
 /* ===== 공통 설정 ===== */
+
+.bg-img {
+  position: absolute;
+  max-width: 100px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.bg-image.absolute {
+  position: absolute;
+}
+
 .background-wrapper {
   position: relative;
   width: 100%;
   height: 0;
-  z-index: -1;
-}
-
-.bg-img {
-  position: absolute;
-  max-width: 120px;
-  object-fit: contain;
-  pointer-events: none;
   z-index: -1;
 }
 
@@ -31,11 +37,11 @@
   right:7%;
 }
 .right-2{
-  top:2350px;
+  top:2250px;
   right:37%;
 }
 .left-2{
-  top:3000px;
+  top:2900px;
   left: 37%;
 }
 .left-3{
@@ -47,24 +53,25 @@
   right:5%;
 }
 .right-4{
-  top:3900px;
+  top:3800px;
   right:10%;
+  max-width: 600px;
   z-index: 10;
 }
 .left-5{
-  top:6250px;
+  top:6150px;
   left:37%;
 }
 .right-5{
-  top:7120px;
+  top:7020px;
   right:35%;
 }
 .left-6{
-  top:7780px;
+  top:7680px;
   left:3%;
 }
 .right-6{
-  top:7750px;
+  top:7650px;
   right:3%;
 }
 @media screen and (max-width: 1200px) {
@@ -156,20 +163,19 @@
   z-index: 10;
 }
 .left-5{
-  top:6450px;
-  left:15%;
+  top:6250px;
+  left:10%;
 }
 .right-5{
-  top:7150px;
-  right:15%;
+  top:7000px;
+  right:10%;
 }
 .left-6{
-  top:8800px;
+  top:8850px;
   left:2%;
 }
 .right-6{
-  top:8840px;
+  top:8820px;
   right:2%;
-}
 }
 /* 배경이미지 끝 */
