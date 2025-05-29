@@ -1066,6 +1066,9 @@ h3 {
 }
 .review_cardbox{
   flex-direction: column;
+
+.r_card{
+    transition: transform 0.5s
 }
 .review_cardbox li {
   width: 70%;
